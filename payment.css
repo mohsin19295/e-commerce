@@ -1,0 +1,93 @@
+.wrapper {
+    background-color: #fff;
+    max-width: 500px;
+    padding: 25px 25px 10px;
+    margin: 25px auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.input_group {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0;
+}
+
+.input_box {
+    width: 100%;
+    position: relative;
+}
+
+.input_box label i{
+    margin-right: 10px;
+}
+
+
+.input_box .name {
+    padding: 14px 10px 14px 50px;
+    width: 100%;
+    background-color: #fcfcfc;
+    border: 1px solid #0003;
+    outline: none;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    border-radius: 3px;
+    color: #333;
+}
+
+
+.input_box .icon {
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    color: #333;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+.name:focus+.icon {
+    background-color: coral;
+    border: none;
+    transition: 1s;
+}
+
+
+.radio {
+    display: none;
+}
+
+.input_box label {
+    width: 50%;
+    padding: 13px;
+    background-color: #fcfcfc;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    border: 1px solid #c0bfbf;
+}
+
+
+.radio:checked+label {
+    background-color: coral;
+    transition: 0.3s ease;
+}
+
+.input_box button {
+    width: 100%;
+    background-color: coral;
+    border: none;
+    color: #fff;
+    padding: 15px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+}
+
