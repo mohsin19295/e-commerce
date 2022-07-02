@@ -58,21 +58,25 @@ button{
     padding: 0.6em 1em;
     font-size: clamp(0.8rem, 4vw, 1rem);
     border: 0;
+    outline: none;
     border-radius: 5px;
     color: #fff;
-    background-color: #242526;
+    background-color: #323233;
     transition: 0.3s ease;
 }
 
 button:hover{
     background-color: #000;
-
 }
 
 /* Navbar Style */
+.navbar{
+    box-shadow: 0 5px 10px rgba(0,0,0,.3);
+}
+
 .navbar-light .navbar-nav .nav-item {
     transition: 0.3s ease;
-    padding: 0 10px;
+    padding: 5px 10px;
 }
 
 .navbar-light .navbar-nav .nav-link:hover{
@@ -87,6 +91,12 @@ button:hover{
     background-color: #fff;
 }
 
+#logo{
+    max-width: 40px;
+    height:40px;
+    border-radius: 50%;
+}
+
 /* Home Section Style */
 #home{
     background-image: url("./images/shopping.jpg");
@@ -98,7 +108,7 @@ button:hover{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding-left:5%;
+    padding-left:4%;
 }
 
 #home span{
@@ -110,7 +120,6 @@ button:hover{
 }
 
 /* Product Section */
-
 .single-product{
     cursor: pointer;
 }
@@ -133,4 +142,41 @@ button:hover{
 .single-product:hover .buy-btn{
     transform: translateY(0);
     opacity: 1;
+    outline: none;
+}
+
+/* Footer */
+footer {
+    background-color: #bd2e2b;
+}
+
+ #footer-logo{
+    max-width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+footer li a, p{
+    color: #fff;
+}
+
+footer li a:hover{
+    transition: 0.1s ease;
+    text-decoration: none;
+    color: rgb(175, 174, 174);
+}
+
+footer h4{
+    color: #343435;
+    font-weight: 500;
+}
+
+.footer-box .row i{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.footer-box .row i:hover{
+    color: #000;
+    transition: 0.1s ease;
 }
