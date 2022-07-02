@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styling */
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: clamp(1.8rem, 9vw, 3.6rem);
+}
+
+h2 {
+    font-size: clamp(1.7rem, 8vw, 3rem);
+}
+
+h3 {
+    font-size: clamp(1.4rem, 6vw, 2.4rem);
+}
+
+h4 {
+    font-size: clamp(1.1rem, 4.5vw, 1.9rem);
+}
+
+p {
+    font-size: clamp(1rem, 3vw, 1.2rem);
+}
+
+button{
+    padding: 0.6em 1em;
+    font-size: clamp(0.8rem, 4vw, 1rem);
+    font-weight: 600;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #242526;
+    transition: 0.3s ease;
+}
+
+button:hover{
+    background-color: #000;
+
+}
+
+/* Navbar Style */
+.navbar-light .navbar-nav .nav-item {
+    transition: 0.3s ease;
+    padding: 0 10px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color:coral;
+}
+
+.navbar-light .navbar-toggler .bar{
+    color: #000;
+}
+
+.navbar-light .navbar-toggler {
+    background-color: #fff;
+}
+/* Home Section Style */
+#home{
+    background-image: url("./images/shopping.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 150%;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left:5%;
+}
+
+#home span{
+    color: coral;
+}
+
+#home .home-content{
+    width: 80%;
+}
+
