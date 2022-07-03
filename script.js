@@ -25,28 +25,37 @@ document.getElementById("paymentForm").addEventListener("submit", submitForm);
 function submitForm(e) {
   e.preventDefault();
 
-  let firstName = getElementVal("firstName");
-  let lastName = getElementVal("lastName");
-  let email = getElementVal("email");
+  let cardNumber = document.getElementById("cardNumber");
+  let cvvNumber = document.getElementById("cvvNumber");
+  let alert = document.getElementById("alert");
 
-  saveMessages(firstName, lastName, email);
+  if (cardNumber.value.length !== 16 || cvvNumber.value.length !== 3) {
+    alertMessage(alert, "please fill correct details");
+  } else {
+    let firstName = getElementVal("firstName");
+    let lastName = getElementVal("lastName");
+    let email = getElementVal("email");
+    
+    saveMessages(firstName, lastName, email);
+    alertMessage(alert, "Your message sent");
+    document.getElementById("paymentForm").reset();
+  }
+}
 
-  document.querySelector(".alert").style.display = "block";
-  setTimeout(() => {
-    document.querySelector(".alert").style.display = "none";
-  }, 3000);
-
-
-  document.getElementById("paymentForm").reset();
+const alertMessage = (alert, text) => {
+   alert.style.display = "block";
+   alert.innerHTML = text;
+   setTimeout(() => {
+     alert.style.display = "none";
+   }, 3000);
 }
 
 const saveMessages = (firstName, lastName, email) => {
   let newpaymentForm = paymentFormDB.push();
-
   newpaymentForm.set({
-    firstName: firstName,
-    lastName: lastName,
-    email: email,
+    firstName,
+    lastName,
+    email,
   });
 };
 

@@ -17,7 +17,7 @@ form .input_group {
     display: flex;
 }
 
-form .alert {
+form #alert {
     width: 100%;
     background: rgb(0, 255, 106);
     padding: 10px 20px;

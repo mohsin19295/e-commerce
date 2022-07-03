@@ -102,7 +102,7 @@ button:hover{
 
 /* Home Section Style */
 #home{
-    background-image: url("./images/shopping.jpg");
+    background-image: url("../images/shopping.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 150%;
