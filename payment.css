@@ -1,31 +1,47 @@
 .wrapper {
     background-color: #fff;
     max-width: 500px;
-    padding: 25px 25px 10px;
+    padding: 1.5rem 0.8rem 0.8rem;
     margin: 25px auto;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }
 
-.input_group {
-    position: relative;
+.wrapper form {
     display: flex;
-    flex-direction: row;
-    padding: 5px 0;
+    flex-direction: column;
+    gap: 10px;
 }
+
+form .input_group {
+    display: flex;
+}
+
+form .alert {
+    width: 100%;
+    background: rgb(0, 255, 106);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 800;
+    display: none;
+    color: coral;
+}
+
 
 .input_box {
     width: 100%;
     position: relative;
 }
 
-.input_box label i{
-    margin-right: 10px;
+.input_box label i {
+    margin-right: 0.8em;
 }
 
 
 .input_box .name {
-    padding: 14px 10px 14px 50px;
+    padding: 1rem 1rem 1rem 3.5rem;
     width: 100%;
     background-color: #fcfcfc;
     border: 1px solid #0003;
@@ -48,12 +64,11 @@
     bottom: 0;
     color: #333;
     transition: 0.3s;
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 .name:focus+.icon {
     background-color: coral;
-    border: none;
     transition: 1s;
 }
 
@@ -64,9 +79,9 @@
 
 .input_box label {
     width: 50%;
-    padding: 13px;
+    padding: 1rem 0.6rem;
     background-color: #fcfcfc;
-    display: inline-block;
+    display: block;
     float: left;
     text-align: center;
     border: 1px solid #c0bfbf;
@@ -91,3 +106,13 @@
     outline: none;
 }
 
+
+@media screen and (max-width:350px) {
+    form .input_group {
+        flex-direction: column;
+    }
+
+    .input_box label {
+        width: 100%;
+    }
+}

@@ -11,68 +11,69 @@
 </head>
 <body>
 <div class="wrapper">
-    <form action="" method="post">
+    <form action="" method="post" id="paymentForm">
+        <div class="alert">Your message sent</div>
         <!--Account Information Start-->
         <div class="input_group">
             <div class="input_box">
-                <input type="text" placeholder="First Name" required class="name">
+                <input type="text" placeholder="First Name" required class="name" id="firstName">
                 <i class="fa fa-user icon"></i>
             </div>
             <div class="input_box">
-                <input type="text" placeholder="Last Name" required class="name">
+                <input type="text" placeholder="Last Name" required class="name" id="lastName">
                 <i class="fa fa-user icon"></i>
             </div>
         </div>
         <div class="input_group">
             <div class="input_box">
-                <input type="email" placeholder="Email Address" required class="name">
+                <input type="email" placeholder="Email Address" required class="name" id="email">
                 <i class="fa fa-envelope icon"></i>
             </div>
         </div>
         <div class="input_group">
             <div class="input_box">
                 <input type="text" placeholder="Address" required class="name">
-                <i class="fa fa-map-marker icon" aria-hidden="true"></i>
+                <i class="fa fa-map-marker icon"></i>
             </div>
         </div>
 
         <!--Payment Details Start-->
         <div class="input_group">
             <div class="input_box">
-                <input type="radio" name="pay" class="radio" id="bc1" checked>
-                <label for="bc1"><span>
+               <div>
+                <input type="radio" name="pay" class="radio" id="credit" checked>
+                <label for="credit"><span>
                         <i class="fa fa-cc-visa"></i>Credit Card</span></label>
-                <input type="radio" name="pay" class="radio" id="bc2">
-                <label for="bc2"><span>
+               </div>
+              <div>
+                <input type="radio" name="pay" class="radio" id="paypal">
+                <label for="paypal"><span>
                         <i class="fa fa-cc-paypal"></i>Paypal</span></label>
+              </div>
             </div>
         </div>
         <div class="input_group">
             <div class="input_box">
-                <input type="number" class="name" placeholder=" 1111-2222-3333-4444" required>
+                <input type="number" class="name" placeholder="Card Number" required>
                 <i class="fa fa-credit-card icon"></i>
             </div>
         </div>
         <div class="input_group">
             <div class="input_box">
-                <input type="number" class="name" placeholder="123" required>
-                <i class="fa fa-user icon"></i>
+                <input type="number" class="name" placeholder="CVV" required>
+                <i class="fa-solid fa-credit-card icon"></i>
             </div>
         </div>
         <div class="input_group">
             <div class="input_box">
                 <div class="input_box">
-                    <input type="number" placeholder="Exp Month" required class="name">
+                    <input type="number" placeholder="Exp Mon" required class="name">
                     <i class="fa fa-calendar icon"></i>
                 </div>
             </div>
             <div class="input_box">
                 <input type="number" placeholder="Exp Year" required class="name">
                 <i class="fa fa-calendar-o icon"></i>
-            </div>
-            <div class="input_box">
-                <input type="number" placeholder="Exp Year" required class="name">
-                <i class="fa fa-calendar-o icon" ></i>
             </div>
         </div>
         <!--Payment Details End-->
@@ -92,3 +93,5 @@
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
     crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/a55cf239a3.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script  src="./script.js"></script>
