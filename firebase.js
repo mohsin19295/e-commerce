@@ -35,7 +35,7 @@ function submitForm(e) {
     let firstName = getElementVal("firstName");
     let lastName = getElementVal("lastName");
     let email = getElementVal("email");
-    
+
     saveMessages(firstName, lastName, email);
     alertMessage(alert, "Your message sent");
     document.getElementById("paymentForm").reset();
@@ -43,12 +43,12 @@ function submitForm(e) {
 }
 
 const alertMessage = (alert, text) => {
-   alert.style.display = "block";
-   alert.innerHTML = text;
-   setTimeout(() => {
-     alert.style.display = "none";
-   }, 3000);
-}
+  alert.style.display = "block";
+  alert.innerHTML = text;
+  setTimeout(() => {
+    alert.style.display = "none";
+  }, 3000);
+};
 
 const saveMessages = (firstName, lastName, email) => {
   let newpaymentForm = paymentFormDB.push();

@@ -2,19 +2,20 @@
     background-color: #fff;
     max-width: 500px;
     padding: 1.5rem 0.8rem 0.8rem;
-    margin: 25px auto;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    margin: 7rem auto 1rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }
 
 .wrapper form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.5rem;
 }
 
 form .input_group {
     display: flex;
+    gap: 0.5rem;
 }
 
 form #alert {
@@ -41,7 +42,7 @@ form #alert {
 
 
 .input_box .name {
-    padding: 1rem 1rem 1rem 3.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 3.5rem;
     width: 100%;
     background-color: #fcfcfc;
     border: 1px solid #0003;
@@ -79,7 +80,7 @@ form #alert {
 
 .input_box label {
     width: 50%;
-    padding: 1rem 0.6rem;
+    padding: 0.6rem;
     background-color: #fcfcfc;
     display: block;
     float: left;
@@ -98,8 +99,8 @@ form #alert {
     background-color: coral;
     border: none;
     color: #fff;
-    padding: 15px;
-    font-size: 16px;
+    padding: 14px;
+    font-weight: 600;
     transition: all 0.3s ease;
     border-radius: 8px;
     cursor: pointer;
